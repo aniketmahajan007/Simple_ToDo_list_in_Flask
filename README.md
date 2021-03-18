@@ -1,2 +1,2 @@
-# Simple_ToDo_list_in_Flask
+# Simple ToDo list in Flask
 Simple To do List in Python Flask 
