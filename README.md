@@ -2,4 +2,5 @@
 Simple To do List in Python
 
 Tech Used - Flask , Vanilla Javascript, CSS, HTML, Python3
-Database - MySQL to store tasked
+Database - MySQL 
+           SQL Alchemy
