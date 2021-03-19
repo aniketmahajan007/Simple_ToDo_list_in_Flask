@@ -22,22 +22,22 @@
                             <div class="list-wrapper">
                                 <ul class="d-flex flex-column-reverse todo-list" id="all_tasked">
                                     {% for tasked in task %}
-                                         {% if tasked[2] == 0 %}
+                                         {% if tasked["status"] == 0 %}
                                              <li>
                                              <div class="form-check">
                                                 <label class="form-check-label">
-                                                    <input id="item{{ tasked[0] }}" class="checkbox items_checkbox" type="checkbox">
+                                                    <input id="item{{ tasked["id"] }}" class="checkbox items_checkbox" type="checkbox">
                                          {% else %}
                                             <li class="completed">
                                              <div class="form-check">
                                                 <label class="form-check-label">
-                                                    <input id="item{{ tasked[0] }}" class="checkbox items_checkbox" type="checkbox" checked>
+                                                    <input id="item{{ tasked["id"] }}" class="checkbox items_checkbox" type="checkbox" checked>
                                          {% endif %}
-                                            {{ tasked[1] }}
+                                            {{ tasked["tasked"] }}
                                                     <i class="input-helper"></i>
                                                 </label>
                                             </div>
-                                            <i id="remove{{ tasked[0] }}" class="remove remove_task mdi mdi-close-circle-outline"></i>
+                                            <i id="remove{{ tasked["id"] }}" class="remove remove_task mdi mdi-close-circle-outline"></i>
                                         </li>
                                     {%  endfor %}
                                 </ul>
